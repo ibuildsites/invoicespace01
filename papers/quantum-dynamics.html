@@ -4,14 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Paper | Your Invoice Space</title>
+    
+    <link rel="icon" type="image/png" href="https://i.ibb.co/vx553n3t/Your-Invoice-Space-Favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Inter', sans-serif; line-height: 1.8; color: #333; max-width: 700px; margin: 4rem auto; padding: 0 1.5rem; }
-        .back-link { text-decoration: none; color: #0070f3; font-size: 0.9rem; margin-bottom: 2rem; display: inline-block; }
-        h1 { font-family: 'Instrument Serif', serif; font-size: 2.8rem; line-height: 1.1; margin-bottom: 1rem; color: #0a2540; }
-        .authors { font-weight: 600; margin-bottom: 2rem; color: #555; }
-        .abstract-box { background: #f9f9f9; padding: 2rem; border-left: 4px solid #0a2540; margin-bottom: 2rem; }
-        .rik-id { font-family: monospace; font-size: 0.8rem; color: #999; margin-top: 4rem; border-top: 1px solid #eee; padding-top: 1rem; }
+        :root {
+            --primary: #0a2540;
+            --accent: #0070f3;
+            --text: #1a1a1a;
+            --light-text: #555;
+            --bg: #ffffff;
+            --abstract-bg: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.8; 
+            color: var(--text); 
+            max-width: 750px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem 5rem 1.5rem; 
+            background-color: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-link { 
+            text-decoration: none; 
+            color: var(--accent); 
+            font-size: 0.9rem; 
+            font-weight: 500;
+            margin-bottom: 3rem; 
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: opacity 0.2s;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 { 
+            font-family: 'Instrument Serif', serif; 
+            font-size: clamp(2.2rem, 7vw, 3.2rem); 
+            line-height: 1.1; 
+            margin: 0 0 1rem 0; 
+            color: var(--primary); 
+            font-weight: 400;
+        }
+
+        .authors { 
+            font-weight: 600; 
+            font-size: 1.1rem;
+            color: var(--light-text); 
+            margin-bottom: 2rem; 
+        }
+
+        .abstract-box { 
+            background: var(--abstract-bg); 
+            padding: 2rem; 
+            border-left: 3px solid var(--primary); 
+            margin-bottom: 3rem;
+            font-size: 1.05rem;
+        }
+
+        .abstract-title {
+            display: block;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .rik-id-footer { 
+            font-family: 'Courier New', monospace; 
+            font-size: 0.75rem; 
+            color: #999; 
+            margin-top: 5rem; 
+            border-top: 1px solid #eee; 
+            padding-top: 1.5rem; 
+            word-break: break-all;
+            line-height: 1.4;
+        }
+
+        .rik-label {
+            font-weight: 600;
+            color: var(--primary);
+            font-family: 'Inter', sans-serif;
+            margin-right: 8px;
+        }
+
+        /* Mobile specific spacing adjustments */
+        @media (max-width: 600px) {
+            body { padding-top: 1.5rem; }
+            .abstract-box { padding: 1.5rem; }
+        }
     </style>
 </head>
 <body>
@@ -19,19 +126,25 @@
 <a href="../index.html" class="back-link">← Return to Hub</a>
 
 <article>
-    <h1>Quantum Dynamics in Multi-Agent Neural Topologies</h1>
-    <p class="authors">Dr. Aris Thorne, Sarah Jenkins, et al.</p>
+    <header>
+        <h1>Quantum Dynamics in Multi-Agent Neural Topologies</h1>
+        <p class="authors">Dr. Aris Thorne, Sarah Jenkins, et al.</p>
+    </header>
 
     <div class="abstract-box">
-        <strong>Abstract:</strong> This paper explores the intersection of quantum computing principles and decentralized neural networks. We propose a model where "invoice spaces" act as nodes for data verification...
+        <span class="abstract-title">Abstract</span>
+        This paper explores the intersection of quantum computing principles and decentralized neural networks. We propose a model where "invoice spaces" act as nodes for data verification...
     </div>
 
     <section>
-        <p>Your research content goes here. You can use standard HTML tags for paragraphs, images, or data tables.</p>
+        <p>Research text goes here. The typography is set to 1.1rem with a 1.8 line height to ensure maximum readability on mobile devices and high-resolution monitors alike.</p>
+        
+        <p>You can easily add images using standard HTML: <br>
+        <code>&lt;img src="path-to-image.jpg" style="width:100%; border-radius:8px;"&gt;</code></p>
     </section>
 
-    <div class="rik-id">
-        rikID: 8f3e27a1b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1
+    <div class="rik-id-footer">
+        <span class="rik-label">rikID:</span>8f3e27a1b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1
     </div>
 </article>
 
