@@ -116,16 +116,21 @@
     inset: 0;
     background: rgba(0,0,0,0.4);
     z-index: 1000;
+    overflow-y: auto;          /* ← allows scroll if needed */
 }
+
 
 .cite-box {
     background: #fff;
     max-width: 600px;
+    max-height: 70vh;          /* ← key line */
     margin: 10vh auto;
     padding: 1.5rem;
     border-radius: 8px;
     font-size: 0.85rem;
+    overflow-y: auto;          /* ← key line */
 }
+
 
 .cite-header {
     display: flex;
