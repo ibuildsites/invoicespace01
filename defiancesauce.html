@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research Notecard Instructions</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: url("https://i.ibb.co/fVLr98FQ/bigdd.jpg") center center / cover no-repeat fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 32px;
+    }
+
+    .overlay {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(6px);
+      border-radius: 18px;
+      padding: 22px 26px;
+      color: white;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 0;
+    }
+
+    pre {
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 16px;
+      overflow-x: auto;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.15rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+
+    <div class="card">
+      <h1>Research Notecard Instructions</h1>
+      <p>Follow these steps exactly to generate and organize your research notecards.</p>
+    </div>
+
+    <div class="card">
+      <h2>Step 1 — Download Sources</h2>
+      <p>Download your sources and their contents from <strong>NoodleTools</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Step 2 — Paste This Prompt into an AI</h2>
+      <p>Fill in the blanks and submit:</p>
+
+      <pre>
+# Research Notecard Generation Prompt
+
+## TASK
+Create [NUMBER] research notecards for a slideshow presentation on: **[SPECIFIC AI SUBTOPIC]**
+
+## FORMAT
+Each notecard must include:
+
+**NOTECARD LABEL**
+- Use source name + number (e.g., "Source Name 1", "STATISTIC 2")
+
+**Source:**
+- Full MLA 9th edition citation with access date
+
+**Quote:**
+- Direct quotation from source (1-3 sentences ideal)
+- Choose concrete evidence: statistics, expert claims, key findings
+
+**Paraphrase:** (optional)
+- Include only if quote is technical/complex
+- Simplify for presentation use
+
+**My Ideas:**
+- Explain what this evidence proves/illustrates/demonstrates
+- Connect to slideshow argument using words like: "illustrates," "shows," "supports," "describes," "links"
+- Note which type of slide this fits: problem, solution, impact, background, etc.
+- Critical thinking required - this is the most important section
+
+**History:**
+- Created: [Month Day, Year HH:MM AM/PM]
+
+---
+
+## NOTECARD CATEGORIES
+Organize by purpose:
+- **Statistics** - Hard data and trends
+- **Expert Claims** - Authoritative perspectives and definitions  
+- **Problems** - Challenges, risks, negative impacts
+- **Mechanisms** - How AI works, why effects occur
+- **Effects** - Consequences and outcomes
+- **Solutions** - Recommendations and interventions
+
+## NOTES
+- Prioritize credible, recent sources (academic, governmental, research institutions)
+- For technical AI content, always paraphrase for presentation clarity
+- Select quotes that can work on slides or as talking points
+- Connect evidence to the overall slideshow narrative
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>Step 3 — Paste into NoodleTools</h2>
+      <p>Paste the generated notecards into <strong>NoodleTools</strong> and paraphrase if needed.</p>
+    </div>
+
+    <div class="card footer">
+      Ready to start — follow the steps top to bottom.
+    </div>
+
+  </div>
+
+</body>
+</html>
