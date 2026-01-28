@@ -37,7 +37,7 @@
         }
 
         header {
-            padding: 10vh 1.5rem 4rem 1.5rem;
+            padding: 10vh 1.5rem 3rem 1.5rem;
             text-align: center;
             border-bottom: 1px solid var(--border);
         }
@@ -58,6 +58,31 @@
             text-transform: uppercase;
             margin-bottom: 1rem;
             display: block;
+        }
+
+        .header-actions {
+            margin-top: 1.75rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .special-sauce-btn {
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.65rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+            transition: all 0.2s ease;
+        }
+
+        .special-sauce-btn:hover {
+            background: var(--primary);
+            color: white;
         }
 
         main {
@@ -152,6 +177,11 @@
 <header>
     <span class="tagline">Archive & Intelligence</span>
     <h1>Your Invoice Space</h1>
+
+    <!-- NEW BUTTON -->
+    <div class="header-actions">
+        <a href="defiancesauce.html" class="special-sauce-btn">Defiance’s Special Sauce</a>
+    </div>
 </header>
 
 <main>
