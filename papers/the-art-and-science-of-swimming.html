@@ -25,13 +25,21 @@
             box-sizing: border-box;
         }
 
+        /* Prevents horizontal overflow on mobile devices */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         body { 
             font-family: 'Inter', sans-serif; 
             line-height: 1.8; 
             color: var(--text); 
             max-width: 750px; 
             margin: 0 auto; 
-            padding: 2rem 1.5rem 5rem 1.5rem; 
+            padding: 2rem 1.2rem 5rem 1.2rem; 
             background-color: var(--bg);
             -webkit-font-smoothing: antialiased;
         }
@@ -98,9 +106,39 @@
 
         .article-img {
             width: 100%;
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
             margin: 2rem 0;
             border: 1px solid #eee;
+        }
+
+        /* Scrollable table container to prevent layout breaking */
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            margin: 2rem 0;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            min-width: 600px; /* Forces scroll rather than squashing text */
+        }
+
+        th, td {
+            border-bottom: 1px solid #eee;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            color: var(--primary);
+            font-weight: 600;
         }
 
         .quote-box {
@@ -147,30 +185,10 @@
             font-weight: 400;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            font-size: 0.95rem;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px 15px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f8f9fa;
-            color: var(--primary);
-            font-weight: 600;
-        }
-
         @media (max-width: 600px) {
             body { padding-top: 1.5rem; }
             .abstract-box { padding: 1.5rem; }
-            table { font-size: 0.85rem; }
-            th, td { padding: 8px 10px; }
+            h1 { font-size: 2.2rem; }
         }
     </style>
 </head>
@@ -186,7 +204,7 @@
 
     <div class="abstract-box">
         <span class="abstract-title">Abstract</span>
-        This study delves into the multifaceted strategies—both widely recognized and less conventional—that drive significant improvements in competitive swimming performance. Through a mixed-methods approach combining biomechanical analysis, physiological testing, and a longitudinal case study, we identify key training paradigms, technological integrations, and psychological frameworks contributing to accelerated aquatic gains. The remarkable career trajectory of Masters swimmer Justin W. Gonzales serves as a central case, illustrating a dramatic reduction in personal best times across multiple strokes and distances, particularly noticeable between the 2021-2022 and 2025-2026 seasons. We explore the underlying mechanisms of these improvements, including enhanced stroke efficiency, targeted strength and conditioning, advanced recovery protocols, and the strategic adoption of cutting-edge equipment and mental preparation techniques. The findings offer valuable insights for athletes and coaches aiming to unlock peak potential in the aquatic environment.
+        This study delves into the multifaceted strategies—both widely recognized and less conventional—that drive significant improvements in competitive swimming performance. Through a mixed-methods approach combining biomechanical analysis, physiological testing, and a longitudinal case study, we identify key training paradigms, technological integrations, and psychological frameworks contributing to accelerated aquatic gains. The remarkable career trajectory of Masters swimmer Justin W. Gonzales serves as a central case, illustrating a dramatic reduction in personal best times across multiple strokes and distances, particularly noticeable between the 2021-2022 and 2025-2026 seasons. We explore the underlying mechanisms of these improvements, including enhanced stroke efficiency, targeted strength and conditioning, advanced recovery protocols, and the strategic adoption of cutting-edge equipment.
     </div>
 
     <section>
